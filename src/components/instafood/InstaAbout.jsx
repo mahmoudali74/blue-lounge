@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 
 const aboutImages = [
-  "public/assets/photo_6037353301298318109_y.jpg",
-  "public/assets/photo_6037353301298318110_y.jpg",
-  "public/assets/photo_6037353301298318135_y.jpg",
+  "/assets/photo_6037353301298318110_y.jpg",
+  "/assets/photo_6037353301298318110_y.jpg",
+  "/assets/photo_6037353301298318135_y.jpg",
 ];
 
 export default function InstaFoodAbout() {
@@ -37,7 +37,7 @@ export default function InstaFoodAbout() {
       href="/"
       className="ml-0 md:ml-4 px-4 py-2 border border-[#b08d57]/50 rounded-full hover:bg-[#b08d57] hover:text-black transition text-sm"
     >
-      Back to landing
+      Back to Main page
     </a>
   </nav>
 </header>

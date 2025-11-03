@@ -98,7 +98,7 @@ export default function InstaFoodServices() {
             href="/"
             className="ml-0 md:ml-4 px-4 py-2 border border-[#b08d57]/50 rounded-full hover:bg-[#b08d57] hover:text-black transition text-sm"
           >
-            Back to landing
+            Back to Main page
           </a>
         </nav>
       </header>

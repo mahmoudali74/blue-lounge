@@ -88,7 +88,7 @@ export default function BlueLoungeUltraFancy() {
 
   {/* Desktop Nav */}
   <nav className="hidden space-x-6 text-sm font-medium md:flex">
-    <a href="/" className="transition-colors hover:text-[#b08d57]">Landing</a>
+    <a href="/" className="transition-colors hover:text-[#b08d57]">Main page</a>
     <a href="/s" className="transition-colors hover:text-[#b08d57]">Services</a>
     <a href="/a" className="transition-colors hover:text-[#b08d57]">About</a>
     <a href="/c" className="transition-colors hover:text-[#b08d57]">Contact</a>

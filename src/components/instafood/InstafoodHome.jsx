@@ -50,7 +50,7 @@ export default function InstaFoodHome() {
 
         {/* Desktop Nav */}
         <nav className="hidden space-x-6 text-sm font-semibold text-white md:flex sm:space-x-8 sm:text-base">
-          <a href="/" className="hover:text-[#b08d57] transition-colors">Landing</a>
+          <a href="/" className="hover:text-[#b08d57] transition-colors">Main page</a>
           <a href="/si" className="hover:text-[#b08d57] transition-colors">Services</a>
           <a href="/k" className="hover:text-[#b08d57] transition-colors">About</a>
           <a href="/di" className="hover:text-[#b08d57] transition-colors">Contact</a>
@@ -72,7 +72,7 @@ export default function InstaFoodHome() {
             exit={{ opacity: 0, y: -10 }}
             className="absolute left-0 right-0 flex flex-col items-center py-6 space-y-4 border-t top-16 bg-black/95 border-white/10 md:hidden"
           >
-            <a href="/" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Landing</a>
+            <a href="/" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Main page</a>
             <a href="/si" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Services</a>
             <a href="/k" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>About</a>
             <a href="/di" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Contact</a>
