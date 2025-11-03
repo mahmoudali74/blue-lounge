@@ -110,7 +110,7 @@ export default function BlueLoungeUltraFancy() {
       exit={{ opacity: 0, y: -10 }}
       className="absolute left-0 right-0 flex flex-col items-center py-6 space-y-4 border-t top-16 bg-black/95 border-white/10 md:hidden"
     >
-      <a href="/" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Landing</a>
+      <a href="/" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Main page</a>
       <a href="/s" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Services</a>
       <a href="/a" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>About</a>
       <a href="/c" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Contact</a>
