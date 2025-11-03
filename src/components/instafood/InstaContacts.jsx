@@ -23,7 +23,7 @@ export default function InstaFoodContact() {
       icon: <FiMapPin className="text-[#b08d57] w-8 h-8" />,
       label: "Address",
       value:
-        "Motamayez District - Wahat Road - 6th of October City - Giza",
+        "Block 13/12 - First Floor, IZAR Plaza - Palm Hills, 6th of October City - Giza - Egypt",
     },
   ];
 
