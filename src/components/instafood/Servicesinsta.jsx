@@ -98,7 +98,7 @@ export default function InstaFoodServices() {
             href="/"
             className="ml-0 md:ml-4 px-4 py-2 border border-[#b08d57]/50 rounded-full hover:bg-[#b08d57] hover:text-black transition text-sm"
           >
-            Back to Main page
+            Back to I.F page
           </a>
         </nav>
       </header>
@@ -116,111 +116,110 @@ export default function InstaFoodServices() {
         Our Services
       </motion.h1>
 
-      {/* INDIVIDUALS SECTION */}
-      <section className="mx-auto mt-16 max-w-7xl">
-        <motion.h2
-          className="text-4xl text-center md:text-5xl font-dancing mb-14"
-          style={{ fontFamily: "'Dancing Script', cursive" }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          Individuals Services
-        </motion.h2>
+  {/* INDIVIDUALS SECTION */}
+<section className="mx-auto mt-16 max-w-7xl">
+  <motion.h2
+    className="text-4xl text-center md:text-5xl font-dancing mb-14"
+    style={{ fontFamily: "'Dancing Script', cursive" }}
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+  >
+    Individuals Services
+  </motion.h2>
 
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {servicesIndividuals.map((service, i) => (
-            <motion.div
-              key={i}
-              className="p-6 transition border shadow-lg bg-white/10 rounded-3xl border-white/20 hover:bg-white/20"
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: i * 0.1 }}
-            >
-              <img
-                src={service.img}
-                alt={service.title}
-                className="object-cover w-full mb-6 h-60 rounded-2xl"
-              />
-              <h3
-                className="mb-3 text-2xl font-bold text-white font-dancing"
-                style={{ fontFamily: "'Dancing Script', cursive" }}
-              >
-                {service.title}
-              </h3>
-              <p className="text-base text-gray-200">{service.desc}</p>
-            </motion.div>
-          ))}
+  <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+    {servicesIndividuals.map((service, i) => (
+      <motion.div
+        key={i}
+        className="flex flex-col p-6 transition border shadow-lg bg-white/10 rounded-3xl border-white/20 hover:bg-white/20"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: i * 0.1 }}
+      >
+        <div className="w-full mb-6 overflow-hidden rounded-2xl">
+          <img
+            src={service.img}
+            alt={service.title}
+            className="object-cover w-full h-48 transition-transform duration-300 md:h-56 lg:h-60 hover:scale-105"
+          />
         </div>
-      </section>
-
-      {/* CORPORATE SECTION */}
-      <section className="mx-auto max-w-7xl mt-28">
-        <motion.h2
-          className="text-4xl text-center md:text-5xl font-dancing mb-14"
+        <h3
+          className="mb-3 text-2xl font-bold text-white font-dancing"
           style={{ fontFamily: "'Dancing Script', cursive" }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
         >
-          Corporate Services
-        </motion.h2>
+          {service.title}
+        </h3>
+        <p className="text-base text-gray-200">{service.desc}</p>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {servicesCorporate.map((service, i) => (
-            <motion.div
-              key={i}
-              className="p-6 transition border shadow-lg bg-white/10 rounded-3xl border-white/20 hover:bg-white/20"
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: i * 0.1 }}
-            >
-              <img
-                src={service.img}
-                alt={service.title}
-                className="object-cover w-full mb-6 h-60 rounded-2xl"
-              />
-              <h3
-                className="mb-3 text-2xl font-bold text-white font-dancing"
-                style={{ fontFamily: "'Dancing Script', cursive" }}
-              >
-                {service.title}
-              </h3>
-              <p className="text-base text-gray-200">{service.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+{/* CORPORATE SECTION */}
+<section className="mx-auto max-w-7xl mt-28">
+  <motion.h2
+    className="text-4xl text-center md:text-5xl font-dancing mb-14"
+    style={{ fontFamily: "'Dancing Script', cursive" }}
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+  >
+    Corporate Services
+  </motion.h2>
 
-      {/* CLIENTS SECTION */}
-      <section className="max-w-5xl mx-auto mt-32 text-center">
-        <motion.h2
-          className="text-4xl md:text-5xl font-dancing mb-10 text-[#b08d57]"
+  <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+    {servicesCorporate.map((service, i) => (
+      <motion.div
+        key={i}
+        className="p-6 transition border shadow-lg bg-white/10 rounded-3xl border-white/20 hover:bg-white/20"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: i * 0.1 }}
+      >
+        {/* الصورة اتحذفت */}
+        <h3
+          className="mb-3 text-2xl font-bold text-white font-dancing"
           style={{ fontFamily: "'Dancing Script', cursive" }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
         >
-          Our Happy Clients
-        </motion.h2>
+          {service.title}
+        </h3>
+        <p className="text-base text-gray-200">{service.desc}</p>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
-        <div className="flex flex-wrap justify-center gap-10">
-          {clients.map((client, i) => (
-            <motion.img
-              key={i}
-              src={client}
-              alt={`Client ${i + 1}`}
-              className="w-28 h-28 object-cover rounded-full border-2 border-[#b08d57] shadow-md rotate-slow"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: i * 0.2 }}
-            />
-          ))}
-        </div>
-      </section>
+
+  {/* CLIENTS SECTION */}
+<section className="max-w-5xl mx-auto mt-32 text-center">
+  <motion.h2
+    className="text-4xl md:text-5xl font-dancing mb-10 text-[#b08d57]"
+    style={{ fontFamily: "'Dancing Script', cursive" }}
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+  >
+    Our Happy Clients
+  </motion.h2>
+
+  <div className="flex flex-wrap justify-center gap-10">
+    {clients.map((client, i) => (
+      <motion.img
+        key={i}
+        src={client}
+        alt={`Client ${i + 1}`}
+        className="w-28 h-28 object-cover rounded-full border-2 border-[#b08d57] shadow-md" // هنا شلت rotate-slow
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: i * 0.2 }}
+      />
+    ))}
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer className="py-10 mt-32 text-sm text-center bg-black border-t bg-opacity-90 border-white/20 text-white/70">

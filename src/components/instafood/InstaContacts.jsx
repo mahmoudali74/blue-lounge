@@ -53,7 +53,7 @@ export default function InstaFoodContact() {
       href="/"
       className="ml-0 md:ml-4 px-4 py-2 border border-[#b08d57]/50 rounded-full hover:bg-[#b08d57] hover:text-black transition text-sm"
     >
-      Back to Main page
+      Back to I.F page
     </a>
   </nav>
 </header>
@@ -77,7 +77,7 @@ export default function InstaFoodContact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          LET’S CONNECT WITH US
+          Let’s Connect with us
         </motion.h1>
         <motion.p
           className="z-10 max-w-2xl mt-6 text-lg text-gray-300 font-poppins"

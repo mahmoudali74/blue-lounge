@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const sliderImages = [
   "/assets/photo_6037353301298318157_y.jpg",
@@ -50,10 +51,10 @@ export default function InstaFoodHome() {
 
         {/* Desktop Nav */}
         <nav className="hidden space-x-6 text-sm font-semibold text-white md:flex sm:space-x-8 sm:text-base">
-          <a href="/" className="hover:text-[#b08d57] transition-colors">Main page</a>
-          <a href="/si" className="hover:text-[#b08d57] transition-colors">Services</a>
-          <a href="/k" className="hover:text-[#b08d57] transition-colors">About</a>
-          <a href="/di" className="hover:text-[#b08d57] transition-colors">Contact</a>
+          <Link to="/" className="hover:text-[#b08d57] transition-colors">I.F page</Link>
+          <Link to="/si" className="hover:text-[#b08d57] transition-colors">Services</Link>
+          <Link to="/k" className="hover:text-[#b08d57] transition-colors">About</Link>
+          <Link to="/di" className="hover:text-[#b08d57] transition-colors">Contact</Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -72,14 +73,13 @@ export default function InstaFoodHome() {
             exit={{ opacity: 0, y: -10 }}
             className="absolute left-0 right-0 flex flex-col items-center py-6 space-y-4 border-t top-16 bg-black/95 border-white/10 md:hidden"
           >
-            <a href="/" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Main page</a>
-            <a href="/si" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Services</a>
-            <a href="/k" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>About</a>
-            <a href="/di" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Contact</a>
+            <Link to="/" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Main page</Link>
+            <Link to="/si" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Services</Link>
+            <Link to="/k" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>About</Link>
+            <Link to="/di" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Contact</Link>
           </motion.div>
         )}
       </header>
-
 
       <div className="h-20"></div>
 
@@ -250,10 +250,10 @@ export default function InstaFoodHome() {
       <footer className="relative py-10 mt-32 text-sm text-center bg-black border-t bg-opacity-90 border-white/20 text-white/70">
         <div className="flex justify-center mb-6">
           <img
-            src="/assets/photo_5764642634851879892_x.png"
+            src="/assets/ChatGPT Image Nov 10, 2025, 08_43_55 PM.png"
             alt="Blue Lounge Logo"
-            className="object-contain w-24 h-auto filter brightness-90 drop-shadow-lg"
-            style={{ maxWidth: "120px" }}
+            className="object-contain w-40 h-auto filter brightness-90 drop-shadow-lg"
+            style={{ maxWidth: "300px" }}
           />
         </div>
 

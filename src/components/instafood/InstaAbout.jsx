@@ -4,11 +4,14 @@ import React from "react";
 import { motion } from "framer-motion";
 // InstaFoodAbout.jsx (Premium Bronze Edition)
 
+import { Link } from "react-router-dom";
 
 const aboutImages = [
-  "/assets/photo_6037353301298318110_y.jpg",
-  "/assets/photo_6037353301298318110_y.jpg",
-  "/assets/photo_6037353301298318135_y.jpg",
+  "/assets/photo_5805544892606909567_y.jpg",
+  "/assets/photo_5805544892606909561_y.jpg",
+  "/assets/photo_5805544892606909564_y.jpg",
+  "/assets/photo_5805544892606909563_y.jpg",
+  "/assets/photo_5805544892606909560_y.jpg"
 ];
 
 export default function InstaFoodAbout() {
@@ -29,16 +32,16 @@ export default function InstaFoodAbout() {
     Instafood
   </h1>
   <nav className="flex flex-wrap justify-center flex-1 gap-4 text-sm font-semibold basis-full md:basis-auto md:flex-auto md:gap-8 md:text-base md:justify-end">
-    <a href="/i" className="hover:text-[#b08d57] transition">Home</a>
-    <a href="/si" className="hover:text-[#b08d57] transition">Services</a>
-    <a href="/k" className="hover:text-[#b08d57] transition">About</a>
-    <a href="/di" className="text-[#b08d57] underline underline-offset-4">Contact</a>
-    <a
-      href="/"
+    <Link to="/i" className="hover:text-[#b08d57] transition">Home</Link>
+    <Link to="/si" className="hover:text-[#b08d57] transition">Services</Link>
+    <Link to="/k" className="hover:text-[#b08d57] transition">About</Link>
+    <Link to="/di" className="text-[#b08d57] underline underline-offset-4">Contact</Link>
+    <Link
+      to="/"
       className="ml-0 md:ml-4 px-4 py-2 border border-[#b08d57]/50 rounded-full hover:bg-[#b08d57] hover:text-black transition text-sm"
     >
-      Back to Main page
-    </a>
+      Back to I.F page
+    </Link>
   </nav>
 </header>
 

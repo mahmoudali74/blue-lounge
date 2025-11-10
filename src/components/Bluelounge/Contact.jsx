@@ -114,7 +114,25 @@ export default function ContactUs() {
           ))}
         </motion.div>
       </main>
-    
+      <section className="max-w-5xl px-6 mx-auto mt-24">
+            <motion.div
+              className="rounded-3xl overflow-hidden border border-[#b08d57]/30 shadow-[0_0_25px_rgba(176,141,87,0.15)]"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+            >
+              <iframe
+                title="Instafood Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.2371489546233!2d31.013716975693566!3d29.97278722298279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145855a4e52f5633%3A0x9de29c509aad1e90!2sPalm%20Hills%2C%206th%20of%20October%20City!5e0!3m2!1sen!2seg!4v1709311111111!5m2!1sen!2seg"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
+            </motion.div>
+          </section>
     </div>
   );
 }

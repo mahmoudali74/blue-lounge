@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-    // eslint-disable-next-line no-unused-vars  
+// eslint-disable-next-line no-unused-vars  
 import { motion } from "framer-motion";
 
 const sliderImages = [
@@ -56,7 +56,7 @@ export default function BlueLoungeUltraFancy() {
     return () => clearInterval(interval);
   }, []);
 
-  const mainTitle = "blue lounge";
+  const mainTitle = "BLUE LOUNGE";
 
   const handlePdfClick = () => {
     const pdfUrl = "/InstaFood portfolio.pdf";
@@ -73,6 +73,7 @@ export default function BlueLoungeUltraFancy() {
           .font-dancing-script { font-family: 'Dancing Script', cursive; }
         `}
       </style>
+
 {/* HEADER */}
 <header className="fixed inset-x-0 top-0 z-50 bg-black/70 backdrop-blur-[6px] border-b border-white/10 flex justify-between items-center px-4 sm:px-6 py-4">
   {/* Logo / Title */}
@@ -88,7 +89,7 @@ export default function BlueLoungeUltraFancy() {
 
   {/* Desktop Nav */}
   <nav className="hidden space-x-6 text-sm font-medium md:flex">
-    <a href="/" className="transition-colors hover:text-[#b08d57]">Main page</a>
+    <a href="/" className="transition-colors hover:text-[#b08d57] ">B.l page</a>
     <a href="/s" className="transition-colors hover:text-[#b08d57]">Services</a>
     <a href="/a" className="transition-colors hover:text-[#b08d57]">About</a>
     <a href="/c" className="transition-colors hover:text-[#b08d57]">Contact</a>
@@ -110,14 +111,13 @@ export default function BlueLoungeUltraFancy() {
       exit={{ opacity: 0, y: -10 }}
       className="absolute left-0 right-0 flex flex-col items-center py-6 space-y-4 border-t top-16 bg-black/95 border-white/10 md:hidden"
     >
-      <a href="/" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Main page</a>
+      <a href="/" className="text-white hover:text-[#b08d57] uppercase" onClick={() => setMenuOpen(false)}>MAIN PAGE</a>
       <a href="/s" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Services</a>
       <a href="/a" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>About</a>
       <a href="/c" className="text-white hover:text-[#b08d57]" onClick={() => setMenuOpen(false)}>Contact</a>
     </motion.div>
   )}
 </header>
-
 
       <div className="h-20"></div>
 
@@ -160,13 +160,8 @@ export default function BlueLoungeUltraFancy() {
     >
       Join us for a meal to remember!
     </motion.p>
-
-    <button className="px-6 py-2 mt-4 text-sm font-bold transition duration-300 border-2 border-white rounded-full shadow-lg sm:px-8 md:px-12 sm:py-3 sm:mt-6 sm:text-base md:text-lg bg-black/70 hover:bg-white hover:text-black hover:border-black focus:outline-none">
-      Explore our Menu
-    </button>
   </div>
 </section>
-
 
       {/* SLIDER */}
       <section className="relative w-full max-w-5xl mx-auto my-12 overflow-hidden border shadow-2xl rounded-3xl border-white/10" id="menu">
@@ -185,7 +180,8 @@ export default function BlueLoungeUltraFancy() {
           />
         ))}
       </section>
-            {/* Alternating Image/Text Grid */}
+
+      {/* Alternating Image/Text Grid */}
       <section className="max-w-6xl px-4 mx-auto space-y-20" id="gallery">
         {dishes.map((dish, i) => (
           <motion.div
@@ -236,7 +232,7 @@ export default function BlueLoungeUltraFancy() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
-          ril 2014, Blue Lounge Restaurants & Catering Management set out on a culinary journey, assuming the management of the well-loved Blue Lounge
+          In April 2014, BLUE LOUNGE Restaurants & Catering Management set out on a culinary journey, assuming the management of the well-loved BLUE LOUNGE
           Restaurant & Café in 6th October, which had been serving satisfied customers since 2007.
 
           Over the years, we expanded our horizons. We operated beachfront restaurants on the North Coast for three consecutive years, catering to private beaches
@@ -245,12 +241,13 @@ export default function BlueLoungeUltraFancy() {
           In the summer of 2019, we brought smiles to Dragon Island/Livios Sidi Abd El-Rahman with a small shack offering waffles, crepes, and children's happy meals.
         </motion.p>
       </section>
+
       {/* FOOTER */}
       <footer className="relative py-10 mt-32 text-sm text-center bg-black border-t bg-opacity-90 border-white/20 text-white/70">
         <div className="flex justify-center mb-6">
           <img
             src="/assets/photo_5764642634851879887_y.png"
-            alt="Blue Lounge Logo"
+            alt="BLUE LOUNGE Logo"
             className="object-contain w-24 h-auto filter brightness-90 drop-shadow-lg"
           />
         </div>
@@ -271,7 +268,7 @@ export default function BlueLoungeUltraFancy() {
           </a>
         </div>
 
-        <p>© 2025 Blue Lounge. All Rights Reserved.</p>
+        <p>© 2025 BLUE LOUNGE. All Rights Reserved.</p>
       </footer>
 
       {/* Floating Button */}
@@ -286,5 +283,3 @@ export default function BlueLoungeUltraFancy() {
     </div>
   );
 }
-
-
